@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #1b263b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .brand-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links ul li {
+    margin: 0 1rem;
+}
+
+.navbar-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+    color: #7fb5ff;
+}

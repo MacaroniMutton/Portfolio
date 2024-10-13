@@ -1,0 +1,97 @@
+/* Full-screen hero section */
+#hero {
+    background-color: #1b263b;
+    height: 80vh; /* Full screen height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+/* About Me Snippet Styling */
+#about-me-snippet {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Hero Text Styling */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.hero-text h1 span {
+    color: #7fb5ff; /* Highlight color for Manan Kher */
+}
+
+/* Button Styling with Hover Animation */
+.hero-text .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.hero-text .btn:hover {
+    background-color: #00eeff; /* Change button color on hover */
+    transform: scale(1.05);    /* Slightly enlarge the button on hover */
+}
+
+/* Hero Image with hover effects */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-image img {
+    width: 55vh;
+    height: 55vh;
+    border-radius: 50%;
+    border: 5px solid #7fb5ff;
+    transition: all 0.3s ease;
+}
+
+.hero-image img:hover {
+    border-color: #00ffcc; /* Glowing border color */
+    box-shadow: 0 0 20px #00ffcc;
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+}
