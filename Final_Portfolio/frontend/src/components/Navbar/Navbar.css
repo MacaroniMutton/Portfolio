@@ -12,6 +12,11 @@
     font-size: 1.5rem;
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .brand-title:hover {
+    color: #7fb5ff;
 }
 
 .navbar-links ul {

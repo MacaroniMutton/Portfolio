@@ -1,0 +1,73 @@
+/* Chatbot Section */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Max width for the chat container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding for the container */
+    background-color: #1b263b; /* Background color for the chat container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(13, 44, 91, 0.108); /* Subtle shadow */
+}
+
+.chat-box {
+    flex-grow: 1; /* Allow chat box to grow */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 400px; /* Set a fixed height for the chat box */
+    min-height: 400px;
+    padding: 10px; /* Padding for chat box */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below chat box */
+}
+
+.message {
+    margin: 5px 0; /* Space between messages */
+    padding: 10px 15px; /* Padding for messages (adjusted) */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 70%; /* Set a maximum width for the messages */
+    word-wrap: break-word; /* Ensure long words break correctly */
+    overflow-wrap: break-word; /* Break words to prevent overflow */
+}
+
+.message.user {
+    background-color: #007bff; /* User message background */
+    color: white; /* User message text color */
+    align-self: flex-end; /* Align to the right */
+}
+
+.message.bot {
+    background-color: #5a6268; /* Bot message background */
+    color: white; /* Bot message text color */
+    align-self: flex-start; /* Align to the left */
+}
+
+.chat-form {
+    display: flex; /* Flexbox for input and button */
+}
+
+.chat-form input {
+    flex-grow: 1; /* Input takes available space */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #1b263b; /* Input background */
+    color: #ffffff; /* Text color */
+    caret-color: #ffffff; /* Caret color */
+}
+
+.chat-form button {
+    padding: 10px; /* Padding for buttons */
+    background-color: #007bff; /* Button color */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.chat-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

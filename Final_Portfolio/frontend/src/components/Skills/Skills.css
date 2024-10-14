@@ -1,7 +1,43 @@
+.skills-section {
+    padding: 2rem;
+    position: relative;
+    z-index: 50;
+    margin-top: 3rem;
+}
+
+.sticky-title {
+    position: sticky;
+    top: 70px; /* The title will stay at the top as you scroll */
+    z-index: 100;
+    padding: 1rem 0;
+    text-align: center;
+}
+  
+.sticky-title h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
 .skills-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between tech stacks */
+    gap: 2rem; /* Space between tech stacks */
+    position: relative;
+}
+
+.sticky-card {
+    position: sticky;
+    top: calc(160px + var(--card-index) * 50px); /* Dynamically adjust the top value */
+    padding: 1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    z-index: 1; /* Ensures the cards appear stacked */
+    background-color: white;
+    margin-bottom: 2rem;
+}
+
+.sticky-card + .sticky-card {
+    margin-top: -1rem; /* Adjust the overlap of the sticky cards */
 }
 
 .tech-stack {
@@ -23,19 +59,25 @@
     justify-content: space-evenly;
 }
 
-.logos img {
+.logo-item img {
     width: 50px; /* Adjust logo size */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s; /* Add hover effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-.logos img:hover {
+.logo-item img:hover {
     transform: scale(1.1); /* Enlarge on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .logos img {
+    .logo-item img {
         width: 40px; /* Adjust logo size for smaller screens */
     }
 }

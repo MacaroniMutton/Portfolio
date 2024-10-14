@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #0d1b2a;
+  background: #0d1b2a;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -26,10 +26,17 @@ body {
 h2 {
   font-size: 2.5rem;
   margin-bottom: 1.3rem;
+  color: #7fb5ff;
 }
 
 
 p {
   font-size: 1.2rem;
   color: #cccccc;
+}
+
+hr {
+  width: 80%; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the hr and add margin on top and bottom */
+  border: 1px solid #ccc; /* Customize the border color and style */
 }

@@ -134,10 +134,144 @@ const SkillProficiency = () => {
             }
         });
 
+        // New horizontal bar chart for LeetCode progress
+        const ctxLeetCode = document.getElementById('leetcodeProgressChart').getContext('2d');
+        const leetcodeProgressChart = new Chart(ctxLeetCode, {
+            type: 'bar',
+            data: {
+                labels: ['Easy', 'Medium', 'Hard'],
+                datasets: [{
+                    label: 'LeetCode Problems Solved',
+                    data: [83, 87, 3], // Replace these values with your actual progress
+                    backgroundColor: ['rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(255, 99, 132, 0.6)'],
+                    borderColor: ['rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(255, 99, 132, 1)'],
+                    borderWidth: 1,
+                    barPercentage: 0.8,
+                    categoryPercentage: 0.6
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        min: 0,
+                        max: 200, // Adjust the max value based on your total problems solved
+                        ticks: {
+                            color: 'white',
+                            font: {
+                                size: 14
+                            }
+                        },
+                        grid: {
+                            color: '#555555'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: 'white',
+                            font: {
+                                size: 14
+                            }
+                        },
+                        grid: {
+                            color: '#555555'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        padding: 10,
+                        position: 'top'
+                    }
+                },
+                layout: {
+                    padding: {
+                        top: 20,
+                        bottom: 20
+                    }
+                }
+            }
+        });
+
+        const ctxLine = document.getElementById('activityChart').getContext('2d');
+        const activityChart = new Chart(ctxLine, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October'],
+                datasets: [
+                    {
+                        label: 'LeetCode Activity',
+                        data: [5, 15, 10, 20, 25, 30, 28, 35, 40, 45],
+                        fill: false,
+                        borderColor: 'rgba(255, 99, 132, 1)', // Red line
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Kaggle Activity',
+                        data: [10, 20, 15, 25, 35, 30, 40, 45, 50, 60],
+                        fill: false,
+                        borderColor: 'rgba(54, 162, 235, 1)', // Blue line
+                        tension: 0.1
+                    },
+                    {
+                        label: 'GitHub Activity',
+                        data: [15, 25, 20, 30, 40, 50, 45, 55, 60, 65],
+                        fill: false,
+                        borderColor: 'rgba(75, 192, 192, 1)', // Green line
+                        tension: 0.1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: {
+                        ticks: {
+                            color: 'white', 
+                            font: {
+                                size: 14 
+                            }
+                        },
+                        grid: {
+                            color: '#555555' 
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: 'white', 
+                            font: {
+                                size: 14 
+                            },
+                            beginAtZero: true
+                        },
+                        grid: {
+                            color: '#555555' 
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white', 
+                            font: {
+                                size: 16 
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
         return () => {
             // Cleanup the charts if needed
             radarChart.destroy();
             techUsageChart.destroy();
+            leetcodeProgressChart.destroy();
+            activityChart.destroy();
         };
     }, []); // Add empty dependency array to ensure useEffect runs once
 
@@ -150,6 +284,14 @@ const SkillProficiency = () => {
                 </div>
                 <div className="skillsChartDiv"> {/* Use className instead of class */}
                     <canvas id="techUsageChart"></canvas>
+                </div>
+            </div>
+            <div className="chartContainer"> {/* Use className instead of class */}
+                <div className="skillsChartDiv">
+                    <canvas id="leetcodeProgressChart"></canvas>
+                </div>
+                <div className="skillsChartDiv">
+                    <canvas id="activityChart"></canvas>
                 </div>
             </div>
         </section>

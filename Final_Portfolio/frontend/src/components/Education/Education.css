@@ -1,0 +1,51 @@
+
+.timeline {
+    position: relative;
+    max-width: 600px; /* Max width of the timeline */
+    margin: auto; /* Center the timeline */
+    padding: 20px 0; /* Padding for the timeline */
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0; /* Margin between timeline items */
+    padding-left: 40px; /* Space for the bullet */
+    border-left: 2px solid #00bcd4; /* Left border for the timeline */
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0; /* Remove margin for the last item */
+}
+
+.timeline-content {
+    background-color: rgba(75, 192, 192, 0.2); /* Light background for the content */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for the content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* New styles for the circles */
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: -15px; /* Center vertically with the timeline item */
+    height: 10px; /* Height of the circle */
+    width: 10px; /* Width of the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #00bcd4; /* Color of the circle */
+}
+
+.institution {
+    font-weight: bold; /* Make the institution name bold */
+    color: #00796b; /* Slightly darker accent for institution */
+}
+
+.duration {
+    font-style: italic; /* Italic for the duration */
+    color: #757575; /* Gray color for the duration */
+}
+
+.description {
+    margin-top: 10px; /* Space above the description */
+}
