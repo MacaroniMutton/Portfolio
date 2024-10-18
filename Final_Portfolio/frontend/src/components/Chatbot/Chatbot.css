@@ -8,6 +8,7 @@
     background-color: #1b263b; /* Background color for the chat container */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(13, 44, 91, 0.108); /* Subtle shadow */
+    margin-top: 15px;
 }
 
 .chat-box {
@@ -70,4 +71,23 @@
 
 .chat-form button:hover {
     background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .chat-container {
+        padding: 15px; /* Reduce padding for mobile view */
+    }
+
+    .chat-box {
+        padding: 5px; /* Reduce padding in chat box for mobile view */
+    }
+
+    .chat-form input {
+        padding: 8px; /* Adjust padding for input field */
+    }
+
+    .chat-form button {
+        padding: 8px; /* Adjust padding for buttons */
+    }
 }

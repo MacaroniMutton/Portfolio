@@ -4,6 +4,33 @@ import python from '../../assets/skills/python-logo.png';
 import C from '../../assets/skills/C-logo.png';
 import C__ from '../../assets/skills/C++-logo.png';
 import java from '../../assets/skills/Java-logo.png';
+import html from '../../assets/skills/html-logo.png';
+import css from '../../assets/skills/css-logo.png';
+import leafletjs from '../../assets/skills/leafletjs-logo.png';
+import chartjs from '../../assets/skills/chartjs-logo.png';
+import django from '../../assets/skills/django-logo.png';
+import flask from '../../assets/skills/flask-logo.png';
+import mysql from '../../assets/skills/mysql-logo.png';
+import mongodb from '../../assets/skills/mongodb-logo.svg';
+import sqlite from '../../assets/skills/sqlite-logo.jpeg';
+import tensorflow from '../../assets/skills/tensorflow-logo.svg';
+import keras from '../../assets/skills/keras-logo.png';
+import huggingface from '../../assets/skills/huggingface-logo.svg';
+import langchain from '../../assets/skills/langchain-logo.png';
+import scikit_learn from '../../assets/skills/scikit-learn-logo.png';
+import nltk from '../../assets/skills/nltk-logo.png';
+import opencv from '../../assets/skills/opencv-logo.png';
+import numpy from '../../assets/skills/numpy-logo.svg';
+import pandas from '../../assets/skills/pandas-logo.png';
+import matplotlib from '../../assets/skills/matplotlib-logo.png';
+import seaborn from '../../assets/skills/seaborn-logo.svg';
+import plotly from '../../assets/skills/plotly-logo.avif';
+import git from '../../assets/skills/git-logo.png';
+import github from '../../assets/skills/github-logo.png';
+import postman from '../../assets/skills/postman-logo.svg';
+import gemini from '../../assets/skills/gemini-logo.webp';
+import groq from '../../assets/skills/groq-logo.png';
+import ollama from '../../assets/skills/ollama-logo.png';
 
 // Create a data structure to hold all the skill categories and items
 const skillCategories = [
@@ -21,63 +48,63 @@ const skillCategories = [
     id: 'web-development',
     title: 'Web Development',
     skills: [
-      { name: 'HTML', logo: 'path_to_html_logo.svg' },
-      { name: 'CSS', logo: 'path_to_css_logo.svg' },
-      { name: 'LeafletJS', logo: 'path_to_leafletJS_logo.svg' },
-      { name: 'ChartJS', logo: 'path_to_chartJS_logo.svg' },
-      { name: 'Django', logo: 'path_to_django_logo.svg' },
-      { name: 'Flask', logo: 'path_to_flask_logo.svg' },
+      { name: 'HTML', logo: html },
+      { name: 'CSS', logo: css },
+      { name: 'LeafletJS', logo: leafletjs },
+      { name: 'ChartJS', logo: chartjs },
+      { name: 'Django', logo: django },
+      { name: 'Flask', logo: flask },
     ],
   },
   {
     id: 'databases',
     title: 'Databases',
     skills: [
-      { name: 'MySQL', logo: 'path_to_mysql_logo.svg' },
-      { name: 'SQLite', logo: 'path_to_sqlite_logo.svg' },
-      { name: 'MongoDB', logo: 'path_to_mongodb_logo.svg' },
+      { name: 'MySQL', logo: mysql },
+      { name: 'SQLite', logo: sqlite },
+      { name: 'MongoDB', logo: mongodb },
     ],
   },
   {
     id: 'ml-frameworks',
     title: 'ML Frameworks',
     skills: [
-      { name: 'TensorFlow', logo: 'path_to_tensorflow_logo.svg' },
-      { name: 'Keras', logo: 'path_to_keras_logo.svg' },
-      { name: 'Hugging Face', logo: 'path_to_huggingface_logo.svg' },
-      { name: 'Langchain', logo: 'path_to_langchain_logo.svg' },
-      { name: 'Scikit-learn', logo: 'path_to_sklearn_logo.svg' },
-      { name: 'NLTK', logo: 'path_to_nltk_logo.svg' },
-      { name: 'OpenCV', logo: 'path_to_opencv_logo.svg' },
+      { name: 'TensorFlow', logo: tensorflow },
+      { name: 'Keras', logo: keras },
+      { name: 'HuggingFace', logo: huggingface },
+      { name: 'Langchain', logo: langchain },
+      { name: 'Scikit-learn', logo: scikit_learn },
+      { name: 'NLTK', logo: nltk },
+      { name: 'OpenCV', logo: opencv },
     ],
   },
   {
     id: 'data-analysis',
     title: 'Data Analysis & Visualization',
     skills: [
-      { name: 'NumPy', logo: 'path_to_numpy_logo.svg' },
-      { name: 'Pandas', logo: 'path_to_pandas_logo.svg' },
-      { name: 'Matplotlib', logo: 'path_to_matplotlib_logo.svg' },
-      { name: 'Seaborn', logo: 'path_to_seaborn_logo.svg' },
-      { name: 'Plotly', logo: 'path_to_plotly_logo.svg' },
+      { name: 'NumPy', logo: numpy },
+      { name: 'Pandas', logo: pandas },
+      { name: 'Matplotlib', logo: matplotlib },
+      { name: 'Seaborn', logo: seaborn },
+      { name: 'Plotly', logo: plotly },
     ],
   },
   {
     id: 'tools',
     title: 'Tools',
     skills: [
-      { name: 'Git', logo: 'path_to_git_logo.svg' },
-      { name: 'GitHub', logo: 'path_to_github_logo.svg' },
-      { name: 'Postman', logo: 'path_to_postman_logo.svg' },
+      { name: 'Git', logo: git },
+      { name: 'GitHub', logo: github },
+      { name: 'Postman', logo: postman },
     ],
   },
   {
     id: 'apis',
     title: 'APIs',
     skills: [
-      { name: 'Gemini API', logo: 'path_to_gemini_logo.svg' },
-      { name: 'Groq API', logo: 'path_to_groq_logo.svg' },
-      { name: 'Ollama', logo: 'path_to_ollama_logo.svg' },
+      { name: 'Gemini API', logo: gemini },
+      { name: 'Groq API', logo: groq },
+      { name: 'Ollama', logo: ollama },
     ],
   },
 ];
@@ -88,14 +115,31 @@ const Skills = () => {
       <div className='sticky-title'>
         <h2>Skills</h2>
       </div>
-      <div className="skills-container">
+      {/* Desktop View */}
+      <div className="skills-container desktop">
         {skillCategories.map((category, index) => (
           <div
             id={`sticky-card-${index + 1}`}
             key={index}
             className="sticky-card tech-stack"
-            style={{ '--card-index': index }} // Dynamically set the card index
+            style={{ '--card-index': index }}
           >
+            <h3>{category.title}</h3>
+            <div className="logos-container">
+              {category.skills.map((skill, skillIndex) => (
+                <div className="logo-item" key={skillIndex}>
+                  <img src={skill.logo} width="40" height="40" alt={`${skill.name} Logo`} />
+                  <p>{skill.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Mobile View */}
+      <div className="skills-container mobile">
+        {skillCategories.map((category, index) => (
+          <div key={index} className="skills-category">
             <h3>{category.title}</h3>
             <div className="logos-container">
               {category.skills.map((skill, skillIndex) => (

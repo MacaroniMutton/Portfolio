@@ -57,6 +57,22 @@
     justify-content: space-evenly; /* Center the links */
 }
 
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px; /* Increased padding for mobile view */
+    }
+
+    .contact-links {
+        flex-wrap: wrap; /* Allow links to wrap on smaller screens */
+        justify-content: center; /* Center the wrapped links */
+    }
+
+    .contact-link {
+        margin: 10px; /* Add margin around each contact link */
+    }
+}
+
 .contact-links a {
     margin: 0 15px; /* Spacing between links */
     text-decoration: none; /* Remove underline */

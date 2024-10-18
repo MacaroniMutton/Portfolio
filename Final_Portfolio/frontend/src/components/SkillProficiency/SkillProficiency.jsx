@@ -4,22 +4,28 @@ import './SkillProficiency.css'; // Import the CSS file specific to this compone
 
 const SkillProficiency = () => {
     useEffect(() => {
+        const isMobile = window.innerWidth < 768; // Check if the screen width is less than 768px
+
+        const radarLabels = isMobile 
+            ? ['EDA', 'ML Algorithms', 'Deep Learning', 'Computer Vision', 'NLP', 'Backend Dev', 'Version Control', 'Databases', 'HP Tuning', 'Transformers']
+            : [
+                'Data Analysis and Visualization',
+                'Machine Learning Algorithms',
+                'Deep Learning',
+                'Computer Vision',
+                'NLP',
+                'Backend Development',
+                'Version Control',
+                'Databases',
+                'Hyperparameter Tuning',
+                'Transformer Architectures'
+            ];
+
         const ctxRadar = document.getElementById('skillsChart').getContext('2d');
         const radarChart = new Chart(ctxRadar, {
             type: 'radar',
             data: {
-                labels: [
-                    'Data Analysis and Visualization',
-                    'Machine Learning Algorithms',
-                    'Deep Learning',
-                    'Computer Vision',
-                    'NLP',
-                    'Backend Development',
-                    'Version Control',
-                    'Databases',
-                    'Hyperparameter Tuning',
-                    'Transformer Architectures'
-                ],
+                labels: radarLabels,
                 datasets: [{
                     label: 'Proficiency Level',
                     data: [9, 10, 9, 7, 9, 7, 8, 8, 5, 8],
@@ -30,6 +36,8 @@ const SkillProficiency = () => {
                 }]
             },
             options: {
+                responsive: true, // Enable responsiveness
+                maintainAspectRatio: false, // Allow the chart to adjust its aspect ratio
                 scales: {
                     r: {
                         min: 0,
@@ -85,6 +93,8 @@ const SkillProficiency = () => {
                 }]
             },
             options: {
+                responsive: true, // Enable responsiveness
+                maintainAspectRatio: false, // Allow the chart to adjust its aspect ratio
                 indexAxis: 'y',
                 scales: {
                     x: {
@@ -151,6 +161,8 @@ const SkillProficiency = () => {
                 }]
             },
             options: {
+                responsive: true, // Enable responsiveness
+                maintainAspectRatio: false, // Allow the chart to adjust its aspect ratio
                 scales: {
                     x: {
                         min: 0,
@@ -228,6 +240,8 @@ const SkillProficiency = () => {
                 ]
             },
             options: {
+                responsive: true, // Enable responsiveness
+                maintainAspectRatio: false, // Allow the chart to adjust its aspect ratio
                 scales: {
                     x: {
                         ticks: {
@@ -286,6 +300,7 @@ const SkillProficiency = () => {
                     <canvas id="techUsageChart"></canvas>
                 </div>
             </div>
+            <br />
             <div className="chartContainer"> {/* Use className instead of class */}
                 <div className="skillsChartDiv">
                     <canvas id="leetcodeProgressChart"></canvas>

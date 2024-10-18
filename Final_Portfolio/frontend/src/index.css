@@ -1,3 +1,6 @@
+/* @import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css'; */
+
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +32,6 @@ h2 {
   color: #7fb5ff;
 }
 
-
 p {
   font-size: 1.2rem;
   color: #cccccc;
@@ -39,4 +41,23 @@ hr {
   width: 80%; /* Adjust the width as needed */
   margin: 20px auto; /* Center the hr and add margin on top and bottom */
   border: 1px solid #ccc; /* Customize the border color and style */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 1rem; /* Reduce padding for mobile */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  hr {
+    width: 90%; /* Increase hr width on mobile for better aesthetics */
+  }
 }

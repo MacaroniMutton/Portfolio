@@ -1,21 +1,24 @@
+/* Default Desktop Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
     background-color: #1b263b;
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
-.navbar .brand-title {
+.brand-title {
     font-size: 1.5rem;
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.navbar .brand-title:hover {
+.brand-title:hover {
     color: #7fb5ff;
 }
 
@@ -25,7 +28,7 @@
 }
 
 .navbar-links ul li {
-    margin: 0 1rem;
+    margin: 0 1rem; /* Keep the spacing for desktop */
 }
 
 .navbar-links ul li a {
@@ -38,3 +41,78 @@
 .navbar-links ul li a:hover {
     color: #7fb5ff;
 }
+
+/* Ensure the anchor does not take full width in desktop view */
+.navbar-links ul li a {
+    display: inline-block; /* Keep inline-block for desktop */
+}
+
+/* Mobile Styles */
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background-color: #08111f; /* Slightly darker shade for mobile navbar */
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #08111f; /* Match the darker shade in the dropdown */
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+        z-index: 1001;
+    }
+
+    .navbar-links.active ul {
+        height: auto;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    .navbar-links ul li {
+        margin: 0; /* Remove margin to fill the space */
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        display: block; /* Make the anchor take the full space of the li */
+        width: 100%; /* Ensure the anchor takes the full width */
+        height: 100%; /* Ensure the anchor takes the full height */
+        padding: 1rem; /* Add padding for a better clickable area */
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: block;
+    }
+}
+
+
+

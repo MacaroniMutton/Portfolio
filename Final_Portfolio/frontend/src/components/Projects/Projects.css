@@ -1,15 +1,14 @@
-
-
 .projects-wrapper {
     display: flex;
     align-items: center;
     overflow: hidden;
+    padding: 10px 0; /* Add padding for better spacing */
 }
 
 .projects-container {
     display: flex;
-    overflow-x: auto;
-    padding: 20px 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px 0; /* Padding for the container */
     scrollbar-width: none; /* For Firefox */
 }
 
@@ -20,11 +19,10 @@
 .project-card {
     background-color: #1b263b; /* Lighter Navy for Cards */
     border-radius: 10px;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); */
-    margin: 0 15px;
+    margin: 0 15px; /* Margin for spacing */
     padding: 20px;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 300px; /* Maintain width for desktop */
+    max-width: 300px; /* Maintain width for desktop */
     text-align: left;
     transition: transform 0.3s;
 }
@@ -75,4 +73,42 @@
 
 .right-btn {
     margin-left: 10px;
+}
+
+.swipe-indicator {
+    display: none; /* Hidden by default */
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    .swipe-indicator {
+        display: block; /* Show the swipe indicator on mobile */
+    }
+
+    .scroll-btn {
+        display: none; /* Hide the scroll buttons on mobile */
+    }
+
+    .projects-container {
+        flex-direction: row; /* Keep the container as a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
+
+    .project-card {
+        margin: 0 5px; /* Reduced horizontal margin for better fit */
+        min-width: 280px;
+    }
+
+    .scroll-btn {
+        margin: 5px 0; /* Add margin for better spacing */
+    }
+
+    .project-card h3 {
+        font-size: 1.1em; /* Slightly smaller font size for mobile */
+    }
+
+    .project-card p {
+        font-size: 0.9em; /* Slightly smaller font size for mobile */
+    }
 }

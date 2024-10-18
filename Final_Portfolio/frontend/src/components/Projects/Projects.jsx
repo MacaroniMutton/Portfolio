@@ -117,6 +117,7 @@ const Projects = () => {
     return (
         <section id="projects" className="section">
             <h2>Projects</h2>
+            <p className="swipe-indicator">Swipe left or right to see more projects</p>
             <div className="projects-wrapper">
                 <button className="scroll-btn left-btn" onClick={scrollLeft}>&#10094;</button>
                 <div className="projects-container" ref={projectContainerRef}>

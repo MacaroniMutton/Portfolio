@@ -1,4 +1,3 @@
-
 .timeline {
     position: relative;
     max-width: 600px; /* Max width of the timeline */
@@ -48,4 +47,27 @@
 
 .description {
     margin-top: 10px; /* Space above the description */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .timeline {
+        max-width: 90%; /* Allow more width on smaller screens */
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+
+    .timeline-item {
+        padding-left: 30px; /* Reduced padding for bullet space */
+    }
+
+    .timeline-item:before {
+        left: -4px; /* Adjust circle position */
+        top: -10px; /* Center circle vertically */
+        height: 8px; /* Smaller circle */
+        width: 8px; /* Smaller circle */
+    }
+
+    .timeline-content {
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
 }
