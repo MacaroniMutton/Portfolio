@@ -1,0 +1,68 @@
+Manan Kher
+7977682332 | manan.kher22@spit.ac.in | Mumbai, Maharashtra
+linkedin.com/in/manankher | github.com/macaronimutton | kaggle.com/macaronimutton
+Summary
+I am a 3rd-year Computer Engineering student with a CGPA of 9.99, passionate about Data Science, Machine Learning,
+and backend development. I have hands-on experience with EDA, supervised and unsupervised learning, and advanced
+deep learning techniques such as ANN, CNN, and LSTM. I’ve worked on real-world tasks in computer vision, NLP, and
+transformer models. Notable projects include a deepfake detector using TensorFlow and a fashion recommender system
+built with Django. I am seeking opportunities to apply my skills in a Data Science or Machine Learning internship.
+Education
+Sardar Patel Institute of Technology Mumbai, India
+B.Tech in Computer Engineering, CGPA: 9.99 Aug 2022 – Present
+SPJIMR SP Jain Institute of Management and Research Mumbai, India
+Minor in Management Feb 2024 – Present
+Alpha College Mumbai, India
+11th and 12th Standard, Grade: 97.5%, MHT-CET: 100%ile, JEE Mains: 99.53%ile 2020 – 2022
+Orion ICSE School Mumbai, India
+10th Boards: 98.2% 2007 – 2020
+Projects
+Conversational RAG Bot | Langchain, HuggingFace, Groq API, Ollama, FAISS 2024
+• Built a conversational RAG bot with message history using Langchain, Hugging Face embeddings, and LLMs from
+Groq API and Ollama.
+• Utilized FAISS vector store to store embeddings of document chunks, enabling efficient similarity search to retrieve
+relevant context.
+• Passed retrieved context as a prompt to the LLM model along with user input, enhancing the bot’s conversational
+relevance and accuracy.
+OCR for Product Dimension Extraction (Amazon ML Hackathon) | IDEFICS, EasyOCR 2024
+• Used IDEFICS multimodal model along with OCR to perform Visual Question Answering (VQA) for extracting
+product dimensions such as weight, height, and width from images of Amazon products.
+• Implemented and fine-tuned OCR models (Pytesseract, EasyOCR, KerasOCR) to enhance accuracy in reading and
+processing product dimensions.
+• Developed an efficient solution to extract precise dimensional data from product images for e-commerce
+applications.
+Deepfake Detector | TensorFlow, PyTorch, Random Forest 2023
+• Developed a deepfake detection model using TensorFlow’s MoveNet, PyTorch’s DenseNet16, and Random Forest
+for audio detection.
+• Achieved 85-90% accuracy in detecting deepfake videos by integrating video and audio components.
+Fashion Recommender System (SE Hackathon Top 12) | ResNet, Collaborative Filtering, Django 2023
+• Developed a fashion recommender system using ResNet and collaborative filtering.
+• Integrated Gemini API for real-time image comparison.
+Plane Crash Search using Bayesian Search Theory | Django, LeafletJS, Bayesian Theory 2024
+• Built a plane crash search simulation using Bayesian Search Theory, A* Search Algorithm, and Kernel Density
+Estimation. The optimal search path can be exported in CSV format for use by rescue teams.
+• Integrated Django backend, LeafletJS for geospatial visualization, Selenium for automated data retrieval, and
+Meteomatics API to access wind and ocean wave velocities for algorithmically backtracking recovered debris.
+• Converted gathered geographic and flight data into meaningful probability distributions, and performed
+visualisation with Seaborn and Matplotlib to provide insights to the Search and Rescue Team.
+Technical Skills
+Languages: Python, C, C++, Java
+Databases: MySQL, MongoDB
+Web Technologies: HTML, CSS, Django, Flask
+ML Frameworks: HuggingFace, Langchain, Scikit-learn, Tensorflow, Keras, NLTK, OpenCV
+Python Libraries: Numpy, Pandas, Matplotlib, Seaborn, Plotly, Pygame, Selenium
+Tools: Git, GitHub, Postman
+ML Techniques: NLP, OCR, RAG Pipelines, BERT Fine-tuning, EDA & preprocessing, Transfer Learning, Computer
+Vision
+APIs: Gemini API, Groq API, Ollama
+Certifications
+Generative AI with Langchain and Hugging Face Udemy, Ongoing
+Django Masterclass: Build 9 Real World Django Projects Udemy
+Python for Data Science and Machine Learning Bootcamp Udemy
+Pandas Kaggle
+NPTEL: Soft Skills and Personality Development Top 1% National Topper
+Achievements
+Top 12 Placement — SE Hackathon for Fashion Recommender System
+Participation - Aeravat AI Hackathon (Cybersecurity & AI)
+1st Position — F.Y. BTech Computer Engineering at Sardar Patel Institute of Technology
+MHT-CET Topper - 100%ile in MHT-CET 2022
