@@ -21,3 +21,4 @@ Flask-SQLAlchemy
 flask-cors
 flask-migrate
 Flask-Mail
+gunicorn
