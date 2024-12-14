@@ -34,7 +34,9 @@ const Contact = () => {
     setLoading(true); // Start loading
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/send_email', {
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
+      console.log(apiUrl)
+      const response = await fetch(`${apiUrl}/send_email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -8,7 +8,8 @@ const Chatbot = () => {
   // Function to send the user's message to the backend Flask API
   const sendMessageToBot = async (userMessage) => {
     try {
-      const response = await fetch('http://127.0.0.1:5000/chat', {  // Use your backend URL here
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
+      const response = await fetch(`${apiUrl}/chat`, {  // Use your backend URL here
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
