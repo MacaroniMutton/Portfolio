@@ -1,5 +1,14 @@
 import React, { useRef } from 'react';
 import './Projects.css'; // Import the CSS file specific to this component
+import deepfake from '../../assets/deepfake.png'
+import fashion from '../../assets/fashion.png'
+import bayesian from '../../assets/bayesian.png'
+import amazon from '../../assets/amazon.png'
+import flappy from '../../assets/flappy.png'
+import plant from '../../assets/plant.png'
+import calorie from '../../assets/calorie.png'
+import chat from '../../assets/chat.png'
+
 
 const projectData = [
     {
@@ -10,94 +19,52 @@ const projectData = [
     },
     {
         title: "Deepfake Detector",
-        description: "Achieved 85-90% accuracy using TensorFlow and PyTorch.",
-        techStack: "TensorFlow, PyTorch",
-        image: "path-to-your-image2.jpg"
+        description: "Developed a model integrating video (TensorFlow) and audio (PyTorch) analysis to detect deepfake content with 85-90% accuracy, enhancing content verification tools.",
+        techStack: "TensorFlow, PyTorch, Random Forest",
+        image: deepfake
     },
     // Add more project objects as needed
     {
         title: "Fashion Recommender System",
-        description: "Developed a system to suggest outfits based on user preferences.",
-        techStack: "Django, HTML, CSS, JavaScript",
-        image: "path-to-your-image3.jpg"
+        description: "Designed a personalized fashion recommender system combining image recognition (ResNet) and collaborative filtering, achieving top 12 in SE Hackathon.",
+        techStack: "ResNet, Collaborative Filtering, Django, Gemini API",
+        image: fashion
     },
     {
-        title: "Sentiment Analysis Tool",
-        description: "Analyzed user sentiment from social media using NLP techniques.",
-        techStack: "Python, NLTK, Scikit-Learn",
-        image: "path-to-your-image4.jpg"
+        title: "Plane Crash Search using Bayesian Search Theory",
+        description: "Simulated rescue missions for plane crashes by combining Bayesian theory, geospatial visualization, and flight data analysis to generate optimal search paths.",
+        techStack: "Django, Pygame, LeafletJS, Bayesian Theory, Selenium, Meteomatics API",
+        image: bayesian
     },
     {
-        title: "Weather Forecast App",
-        description: "A web app displaying real-time weather data using APIs.",
-        techStack: "React, Node.js, OpenWeather API",
-        image: "path-to-your-image5.jpg"
-    },
-    {
-        title: "Task Management System",
-        description: "A project management tool to track tasks and deadlines.",
-        techStack: "Flask, SQLite, Bootstrap",
-        image: "path-to-your-image6.jpg"
-    },
-    {
-        title: "Portfolio Website",
-        description: "Personal portfolio to showcase projects and skills.",
-        techStack: "HTML, CSS, JavaScript, React",
-        image: "path-to-your-image7.jpg"
-    },
-    {
-        title: "E-commerce Website",
-        description: "Built a full-fledged e-commerce platform with payment integration.",
-        techStack: "Django, React, Stripe API",
-        image: "path-to-your-image8.jpg"
+        title: "OCR for Product Dimension Extraction",
+        description: "Built a VQA-based system using IDEFICS and OCR models to extract dimensions (weight, height, width) from Amazon product images, improving e-commerce workflows.",
+        techStack: "IDEFICS, EasyOCR, KerasOCR, Pytesseract, Tensorflow, Keras",
+        image: amazon
     },
     {
         title: "Chat Application",
-        description: "Real-time chat app using WebSockets and Node.js.",
-        techStack: "Node.js, Express, Socket.io",
-        image: "path-to-your-image9.jpg"
+        description: "Real-time chat app using WebSockets",
+        techStack: "React, Flask, Socket.io",
+        image: chat
     },
     {
-        title: "Image Classification App",
-        description: "Classifies images using CNN models.",
-        techStack: "TensorFlow, Keras, Flask",
-        image: "path-to-your-image10.jpg"
+        title: "Flappy Bird with Face Controls",
+        description: "Developed a Flappy Bird game using face tracking to control the bird's movements. Integrated OpenCV's face detection with Pygame for a unique and interactive gaming experience.",
+        techStack: "Pygame, OpenCV",
+        image: flappy
     },
     {
-        title: "Fitness Tracker",
-        description: "Tracks workouts and nutrition for fitness enthusiasts.",
-        techStack: "React Native, Firebase",
-        image: "path-to-your-image11.jpg"
+        title: "Plant Species Classification App",
+        description: "Classifies among 47 plant species using an ensemble of state of art CNN models, including VGGNet, InceptionNet, and ResNet, achieving 91% accuracy.",
+        techStack: "Pytorch, Flask, React",
+        image: plant
     },
     {
-        title: "Stock Price Predictor",
-        description: "Predicts stock prices using machine learning algorithms.",
-        techStack: "Python, Scikit-Learn, Matplotlib",
-        image: "path-to-your-image12.jpg"
-    },
-    {
-        title: "Quiz Application",
-        description: "A quiz app with multiple choice questions.",
-        techStack: "React, Node.js, Express",
-        image: "path-to-your-image13.jpg"
-    },
-    {
-        title: "Blog Platform",
-        description: "Allows users to write and share their blogs.",
-        techStack: "Django, React, PostgreSQL",
-        image: "path-to-your-image14.jpg"
-    },
-    {
-        title: "Event Management System",
-        description: "Manage events, tickets, and attendees.",
-        techStack: "Ruby on Rails, PostgreSQL",
-        image: "path-to-your-image15.jpg"
-    },
-    {
-        title: "Travel Planner",
-        description: "Plan your trips and itineraries easily.",
-        techStack: "Vue.js, Express, MongoDB",
-        image: "path-to-your-image16.jpg"
+        title: "Calorie Tracker",
+        description: "Tracks calories and nutrition for fitness enthusiasts.",
+        techStack: "Django, HTML, CSS, Javascript, Nutrition API",
+        image: calorie
     },
 ];
 

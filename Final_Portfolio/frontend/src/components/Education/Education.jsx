@@ -4,30 +4,29 @@ import './Education.css'; // Import the CSS file for styling
 
 const educationData = [
     {
-        degree: "Bachelor of Engineering in Computer Engineering",
-        institution: "Sardar Patel Institute of Technology",
-        duration: "2021 - Present",
-        description: "Pursuing a Bachelor's degree with a CGPA of 9.98."
+        degree: "B.Tech in Computer Engineering",
+        institution: "Sardar Patel Institute of Technology, Mumbai, India",
+        duration: "Aug 2022 - Present",
+        description: "Pursuing a Bachelor's degree with a CGPA of 9.99."
     },
     {
-        degree: "Bachelor of Engineering in Computer Engineering",
-        institution: "Sardar Patel Institute of Technology",
-        duration: "2021 - Present",
-        description: "Pursuing a Bachelor's degree with a CGPA of 9.98."
+        degree: "Minor in Management",
+        institution: "SPJIMR (SP Jain Institute of Management and Research), Mumbai, India",
+        duration: "Feb 2024 - Present",
+        description: "Enrolled in a minor program focusing on management principles."
     },
     {
-        degree: "Higher Secondary Certificate",
-        institution: "XYZ High School",
-        duration: "2019 - 2021",
-        description: "Completed with a focus on Science."
+        degree: "11th and 12th Standard",
+        institution: "Alpha College, Mumbai, India",
+        duration: "2020 - 2022",
+        description: "Achieved 97.5% in board exams, MHT-CET: 100%ile, JEE Mains: 99.53%ile."
     },
     {
-        degree: "Secondary School Certificate",
-        institution: "ABC School",
-        duration: "2015 - 2019",
-        description: "General education with good performance."
-    },
-    // Add more educational qualifications here if needed
+        degree: "Secondary School Certificate (10th Standard)",
+        institution: "Orion ICSE School, Mumbai, India",
+        duration: "2007 - 2020",
+        description: "Completed ICSE boards with a score of 98.2%."
+    }
 ];
 
 const Education = () => {

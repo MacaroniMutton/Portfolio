@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css'; // Import the CSS file specific to this component
-import profileImg from '../../assets/profileImg.jpg';
+import profileImg from '../../assets/profileImg.jpeg';
 import resume from '../../assets/Manan_Kher_Resume_2024.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
