@@ -19,8 +19,8 @@ const projectData = [
     },
     {
         title: "Deepfake Detector",
-        description: "Developed a model integrating video (TensorFlow) and audio (PyTorch) analysis to detect deepfake content with 85-90% accuracy, enhancing content verification tools.",
-        techStack: "TensorFlow, PyTorch, Random Forest",
+        description: "Developed a model integrating video and audio analysis to detect deepfake content with 85-90% accuracy, enhancing content verification tools.",
+        techStack: "TensorFlow, PyTorch, Random Forest, Scikit-learn",
         image: deepfake
     },
     // Add more project objects as needed

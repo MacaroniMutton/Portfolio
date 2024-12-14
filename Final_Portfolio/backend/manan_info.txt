@@ -45,6 +45,20 @@ Estimation. The optimal search path can be exported in CSV format for use by res
 Meteomatics API to access wind and ocean wave velocities for algorithmically backtracking recovered debris.
 • Converted gathered geographic and flight data into meaningful probability distributions, and performed
 visualisation with Seaborn and Matplotlib to provide insights to the Search and Rescue Team.
+Chat Application | React, Flask, Socket.io
+A real-time chat application that enables seamless communication between users. It leverages WebSockets to provide instant message delivery and updates, ensuring a smooth and responsive user experience. The app includes features like private chats, typing indicators, and message history.
+Flappy Bird with Face Controls | Pygame, OpenCV
+An innovative take on the classic Flappy Bird game, where the bird's movements are controlled using face tracking. By integrating OpenCV's face detection technology with Pygame, the game offers a hands-free, interactive gaming experience. Users can control the bird by tilting their heads or using facial gestures, making it both fun and challenging.
+Plant Species Classification App | Pytorch, Flask, React
+A machine learning-powered application designed to classify plant species with high precision. Using an ensemble of advanced Convolutional Neural Networks (CNNs) such as VGGNet, InceptionNet, and ResNet, the app achieves a remarkable accuracy of 91% across 47 plant species. The frontend allows users to upload images, and the backend processes them to return classification results quickly.
+Calorie Tracker | Django, HTML, CSS, Javascript, Nutrition API
+A fitness-oriented web application for tracking calories and nutritional intake. It helps users maintain a healthy lifestyle by providing detailed insights into their daily food consumption. Integrated with a Nutrition API, the app allows users to search for food items, view nutritional details, and track their calorie goals. Its user-friendly interface makes it a go-to tool for fitness enthusiasts.
+
+Other Minor Projects:
+Minimax Algorithm for Chess: Implemented Minimax with alpha-beta pruning to suggest the best chess moves while optimizing search depth. Tech Stack: Python, AI Algorithms.
+DFS Maze Agent: Visualized an agent solving a 5x5 maze using DFS. Highlighted paths dynamically on a Tkinter GUI. Tech Stack: Python, Tkinter, Algorithms.
+Vitals Monitoring Module: Part of a Patient Health Monitoring System, this module processes sensor data, triggers alerts, and displays real-time and historical health data on a dashboard. Tech Stack: Backend (Flask/Django), Database, Frontend (React/Tkinter).
+
 Technical Skills
 Languages: Python, C, C++, Java
 Databases: MySQL, MongoDB
