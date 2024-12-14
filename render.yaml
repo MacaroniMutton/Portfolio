@@ -2,13 +2,13 @@ services:
   - type: web
     name: flask-backend
     env: python
-    buildCommand: pip install -r Final\ Portfolio/backend/requirements.txt
-    startCommand: gunicorn 'Final Portfolio.backend.main:main'
+    buildCommand: pip install -r "Final Portfolio/backend/requirements.txt"
+    startCommand: gunicorn "Final Portfolio.backend.app:app"
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11.2
+        value: 3.9.0
   - type: web
     name: react-frontend
     env: static
-    buildCommand: cd Final\ Portfolio/frontend && npm install && npm run build
-    staticPublishPath: Final\ Portfolio/frontend/build
+    buildCommand: cd "Final Portfolio/frontend" && npm install && npm run build
+    staticPublishPath: "./Final Portfolio/frontend/build"
