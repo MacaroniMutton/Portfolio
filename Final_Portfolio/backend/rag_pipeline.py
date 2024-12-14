@@ -20,7 +20,7 @@ os.environ['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY')
 embeddings=HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 llm=ChatGroq(model_name="Gemma2-9b-It")
 
-loader = TextLoader('C:\\Users\\Manan Kher\\OneDrive\\Documents\\Portfolio_Website\\Final_Portfolio\\backend\\manan_info.txt')
+loader = TextLoader('./manan_info.txt')
 documents = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
